@@ -1,11 +1,7 @@
-import Hero from './Hero';
-import About from './About';
-import Contact from './Contact';
-import Projects from './Projects';
+import Hero from './Hero'
+import About from './About'
+import Contact from './Contact'
+import Testimonials from './Testimonials'
+import Projects from './Projects'
 
-export {
-    Hero, 
-    About, 
-    Projects, 
-    Contact, 
-}
+export { Hero, About, Projects, Testimonials, Contact }
