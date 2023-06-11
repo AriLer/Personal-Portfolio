@@ -10,9 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@homielab/react-native-auto-scroll": "^0.0.9",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-native": "^0.71.10",
+    "react-native-auto-scrolling": "^3.0.2",
     "react-router-dom": "^6.12.0",
+    "react-slideshow-image": "^4.2.1",
     "styled-components": "^6.0.0-rc.1"
   },
   "devDependencies": {

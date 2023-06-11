@@ -1,8 +1,32 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  width: 100%;
   text-align: center;
+  justify-content: center;
+}
+
+.outer-app-container {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-app-container {
+  width: 100%;
+  margin: auto;
+  /* margin: 0 10%; */
+  overflow-x: hidden;
+  padding: 0;
+  /* background-color: red; */
+}
+
+.outer-app-container::-webkit-scrollbar {
+  display: none;
 }
 
 .logo {
@@ -53,6 +77,21 @@
   }
 }
 
+.section {
+  /* width: 80%; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.section-container {
+  width: 80%;
+}
+
 #blob {
   background-color: white;
   height: 300px;
@@ -66,6 +105,7 @@
   animation: rotate 20s infinite;
   /* filter: blur(150px); */
   z-index: -2;
+  overflow: hidden;
 }
 
 #blur {
@@ -74,10 +114,43 @@
   position: absolute;
   z-index: -1;
   backdrop-filter: blur(200px);
+  overflow: hidden;
 }
 
 .section-title {
   text-align: left;
   margin-bottom: 10%;
   font-family: 'Roboto Mono', monospace;
+}
+
+.section-title > span {
+  color: #da4ea2;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  /* width: 100%;
+  overflow-x: hidden; */
+}
+
+@media screen and (max-width: 480px) {
+  #blob {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  .inner-app-container {
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+  .section-title > span {
+    display: block;
+  }
 }
