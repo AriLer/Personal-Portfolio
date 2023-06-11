@@ -42,28 +42,27 @@
 .hero-container > h2 {
   color: rgba(140, 140, 140);
   font-size: 150%;
-  width: 80%;
 }
 
 .contact-btn {
   background-color: transparent;
   color: white;
   font-weight: 500;
-  width: 180px;
-  margin: 50px 5px;
-  padding: 15px;
+  width: 11.25rem;
+  margin: 3.125rem 0.3rem;
+  padding: 0.94rem;
   color: #da4ea2;
   font-weight: 800;
   font-family: 'Roboto Mono', monospace;
-  border: 2px solid #da4ea2;
-  border-radius: 5px;
+  border: 0.125rem solid #da4ea2;
+  border-radius: 0.3rem;
   cursor: pointer;
 }
 
 .contact-btn:hover {
   border-color: #da4ea2;
   outline-color: #da4ea2;
-  animation: wiggle-button 1.5s forwards;
+  animation: wiggle-button 1.2s forwards;
   animation-timing-function: ease-in-out;
 }
 
@@ -79,6 +78,7 @@
   .hero-container {
     text-align: center;
     justify-content: center;
+    align-items: center;
   }
   .hero-container h2 {
     text-align: center;

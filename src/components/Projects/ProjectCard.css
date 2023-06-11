@@ -2,7 +2,7 @@
   display: inline-flex;
   flex-direction: column;
   /* justify-content: space-around; */
-  height: 100%;
+  height: 80%;
   width: 100%;
   padding: 0;
   background: rgb(29, 38, 50);
@@ -13,50 +13,63 @@
     rgba(43, 55, 68, 0.9) 100%
   );
 
-  border-radius: 40px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 2.5rem;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(0.3rem);
+
 }
+
+  
+.slide-container {
+  height: 100%;
+  width: 100%;
+  height: 50%;
+}
+
 
 .project-img {
   margin: 2.5%;
   object-fit: cover;
   object-position: 50% 0%;
-  height: 95%;
-  width: 95%;
-  max-width: 1200px;
-  border-radius: 20px;
+  height: 100%;
+  width: 87%;
+  max-width: 75rem;
+  border-radius: 1.25rem;
 }
 
 .about {
-  max-width: 1200px;
+  max-width: 75rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px auto;
-  width: 85%;
-  margin: 35px auto;
+  gap: 0.625;
+  padding: 1.25rem auto;
+  width: 87%;
+  margin: 1.5rem auto;
+  margin-top: 6%;
   height: 25%;
   text-align: left;
+  /* height: max-content; */
 }
 
 .about > h1 {
   margin: 0;
+  margin-bottom: .2em;
+  font-size: 2.5rem;
 }
 
 .about > h2 {
   color: #8c8c8c;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.2rem;
   white-space: pre-line;
 }
 
 .about a {
   color: #8c8c8c;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 1rem;
   transition: color 0.1s;
 }
 
@@ -65,8 +78,8 @@
 }
 
 .icon {
-  height: 30px;
-  margin: 10px;
+  height: 1.875rem;
+  margin: 0.625rem;
   transition: scale 0.2s;
 }
 .icon:hover,
@@ -74,34 +87,45 @@
   scale: 1.3;
 }
 
-.slide-container {
-  height: 100%;
-  width: 100%;
-  height: 60%;
+#project-img-pacman {
+  /* object-position: 30% 70% !important; */
+  /* height: 10px; */
 }
+
+@media screen and (max-width: 769px) {
+  .project-img {
+    width: 95%;
+  }
+  
+  .about {
+    width: 95%;
+}
+}
+
 
 @media screen and (max-width: 480px) {
   .about {
-    margin-top: 10px;
+    margin-top: 0.8rem;
   }
 
   .about > h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .about > h2 {
-    font-size: 17px;
+    font-size: 0.95rem;
     margin: 0;
+    margin-bottom: 0.5rem;
   }
 
   .about a {
-    font-size: 15px;
+    font-size: 0.95rem;
   }
 
   .project-img {
     margin: 0;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 1.25rem 1.25rem 0 0;
     object-position: 80% 50%;
   }
 }

@@ -1,5 +1,5 @@
 #testimonials {
-  height: 60vh;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -21,7 +21,7 @@
 
 .recomendation-card {
   display: flex;
-  height: 60%;
+  height: 29rem;
   flex-direction: column;
   padding: 30px;
   justify-content: space-between;
@@ -50,7 +50,6 @@
 .person {
   height: 85px;
   border-radius: 50%;
-  /* border: 3px solid white; */
 }
 
 .recomendation-card > main {
@@ -73,29 +72,17 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   #testimonials {
-    height: 70vh;
+    height: 50rem;
     /* margin-bottom: 30px; */
   }
   .recomendations-container {
     gap: 20px;
     margin: 30px 0;
   }
-  /* 
-  .recomendation-card {
-    padding: 25px;
-    height: 100%;
-  }
-
-  .quote {
-    height: 35px;
-  }
-  .person {
-    height: 70px;
-    border: none;
-  } */
 }
+
 
 @media screen and (max-width: 768px) {
   #testimonials {
@@ -124,7 +111,7 @@
 
 @media screen and (max-width: 480px) {
   #testimonials {
-    height: 150vh;
+    height: 80rem;
     margin-bottom: 30px;
   }
   .recomendations-container {

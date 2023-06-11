@@ -38,6 +38,7 @@ export const skillData = [
 
 export const projectsData = [
   {
+    id: 'netflixcollage',
     name: 'Netflix Collage',
     desc: 'A React Chrome extension that alows you to see your viewing history in a much more asteticly pleasing way using the Netflix API.',
     images: ['Netflix-collage/demo.png', 'Netflix-collage/stats.png'],
@@ -46,11 +47,11 @@ export const projectsData = [
       { text: 'GitHub', url: 'https://github.com/AriLer/Netflix-Collage' },
       {
         text: 'Chrome Web Store',
-        url: 'https://chrome.google.com/webstore/detail/netflix-collage/dfghceinikklbaeooeghakngdepmhoeg',
       },
     ],
   },
   {
+    id: 'chessai',
     name: 'Chess AI',
     desc: 'A chess engine in python using minimax. developed during the 12th class',
     images: ['Chess-ai/move.png', 'Chess-ai/home-screen.png'],
@@ -60,6 +61,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 'pacman',
     name: 'Pac-man',
     desc: 'A re-creation of the classic Pac-man in python. developed during the 11th class',
     images: ['Pac-man/pac-man.png'],
@@ -90,7 +92,7 @@ export const testimonialsData = [
   {
     author: {
       name: 'Eliran Daniel',
-      title: 'Physics teacher at Reali School',
+      title: 'Head of physics department at Reali',
     },
     content:
       'ניכר שרצונו ללמידה נובע מאופיו הסקרני ותאב הידע. ארי הינו תלמיד מצטיין בעל יכולות גבוהות במיוחד- הוא רציני, אחראי ומראה מסירות יוצאת דופן בכל תחום בו היא עוסק',

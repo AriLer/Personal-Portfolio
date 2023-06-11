@@ -9,6 +9,7 @@ const Projects = (props) => {
           className="project-img"
           src={`./projects/${props.data.images[0]}`}
           key={`image-${props.data.images[0]}`}
+          id={`project-image-${props.data.name}`}
         />
       </div>
       <div className="about">

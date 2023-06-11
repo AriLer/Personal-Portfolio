@@ -15,8 +15,8 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 0;
-  gap: 50px;
+  padding: 0.625rem 0;
+  gap: 3.125rem;
   font-size: 90%;
   font-family: 'Roboto Mono', monospace;
 }
@@ -24,19 +24,19 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 3.125rem;
   font-size: 90%;
   font-family: 'Roboto Mono', monospace;
 }
 
 .nav-items {
   display: flex;
-  gap: 50px;
+  gap: 3.125rem;
   list-style: none;
 }
 
 .nav-items li {
-  font-size: 17px;
+  font-size: 1.063rem;
   cursor: pointer;
   color: #dedede;
   transition: color 0.4s;

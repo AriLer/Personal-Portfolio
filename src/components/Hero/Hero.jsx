@@ -2,6 +2,10 @@ import React from 'react'
 import Navbar from './Navbar'
 import './Hero.css'
 
+import resume from "./../../../public/Letters/Resume.pdf";
+
+
+
 const Hero = () => {
   return (
     <section className="section" id="hero">
@@ -10,9 +14,9 @@ const Hero = () => {
         <p>Hi, my name is</p>
         <h1>Ari Lerner</h1>
         <h2>I'm a developer specializing in front-end and AI</h2>
-        <a href="#contact">
-          <button className="contact-btn">Download resume</button>
-        </a>
+        {/* <a > */}
+        <button className="contact-btn" onClick={() => window.open(resume)}><i></i>Download resume</button>
+        {/* </a> */}
       </div>
     </section>
   )
