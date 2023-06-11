@@ -1,0 +1,68 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1600px;
+}
+
+.indicator-btn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.left-btn {
+  left: -10%;
+}
+
+.right-btn {
+  right: -10%;
+}
+
+.arrow {
+  height: 35px;
+}
+
+.carousel {
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: translate 0.4s ease-in-out;
+  height: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    width: 110%;
+    margin-left: -5%;
+    height: 100%;
+  }
+
+  .arrow {
+    height: 25px;
+  }
+
+  .left-btn {
+    left: -13%;
+  }
+
+  .right-btn {
+    right: -13%;
+  }
+}

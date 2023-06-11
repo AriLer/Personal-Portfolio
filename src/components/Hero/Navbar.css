@@ -1,0 +1,58 @@
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar {
+  width: 80%;
+  position: relative;
+}
+
+.navbar > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  gap: 50px;
+  font-size: 90%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 90%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.nav-items {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav-items li {
+  font-size: 17px;
+  cursor: pointer;
+  color: #dedede;
+  transition: color 0.4s;
+}
+
+.nav-items a :hover {
+  color: #a9a9a9;
+}
+
+.nav-items span {
+  color: #da4ea2 !important;
+  font-weight: 800;
+}
+
+.resume-download-btn {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+}

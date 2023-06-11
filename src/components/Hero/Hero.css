@@ -1,0 +1,93 @@
+@keyframes wiggle-button {
+  0% {
+    scale: 1;
+    transform: rotate(0);
+  }
+  25% {
+    scale: 1.2;
+    transform: rotate(10deg);
+  }
+  60% {
+    scale: 1.2;
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.hero-container {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-container > p {
+  font-family: 'Roboto Mono', monospace;
+  /* justify-content: left; */
+  font-size: 130%;
+  font-weight: 500;
+}
+
+.hero-container > h1 {
+  margin: 0;
+  font-size: 6rem;
+}
+
+.hero-container > h2 {
+  color: rgba(140, 140, 140);
+  font-size: 150%;
+  width: 80%;
+}
+
+.contact-btn {
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  width: 180px;
+  margin: 50px 5px;
+  padding: 15px;
+  color: #da4ea2;
+  font-weight: 800;
+  font-family: 'Roboto Mono', monospace;
+  border: 2px solid #da4ea2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  border-color: #da4ea2;
+  outline-color: #da4ea2;
+  animation: wiggle-button 1.5s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.contact-btn:hover {
+  outline: none;
+}
+
+.right {
+  flex: 3;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-container h2 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .hero-container p {
+    text-align: center;
+    justify-content: center;
+  }
+}
