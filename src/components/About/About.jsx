@@ -2,7 +2,6 @@ import React from 'react'
 import './About.css'
 import ContentSection from './ContentSection'
 import { aboutData } from './../../constants/index'
-import { styled } from 'styled-components'
 
 const About = () => {
   return (
